@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BST 625 • Min Lu</title>
+<title>COVID-19 Case Fatality Rate and Daily Transmission Rate • Min Lu</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -17,7 +17,7 @@
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="BST 625">
+<script src="../pkgdown.js"></script><meta property="og:title" content="COVID-19 Case Fatality Rate and Daily Transmission Rate">
 <meta property="og:description" content="Lu">
 <meta property="og:image" content="https://www.luminwin.net/logo.svg">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -126,47 +126,36 @@
 
       
 
-      </header><script src="BST625_files/header-attrs-2.11/header-attrs.js"></script><div class="row">
+      </header><script src="covid19_files/header-attrs-2.11/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>BST 625</h1>
+      <h1 data-toc-skip>COVID-19 Case Fatality Rate and Daily Transmission Rate</h1>
             
       
       
-      <div class="hidden name"><code>BST625.Rmd</code></div>
+      <div class="hidden name"><code>covid19.Rmd</code></div>
 
     </div>
 
     
     
-<div id="fall-2020-2021" class="section level2">
-<h2 class="hasAnchor">
-<a href="#fall-2020-2021" class="anchor"></a>Fall 2020, 2021</h2>
-<div id="introduction-to-statistical-programming" class="section level3">
-<h3 class="hasAnchor">
-<a href="#introduction-to-statistical-programming" class="anchor"></a>Introduction to Statistical Programming</h3>
-<p>The R code for each lecture is broadcasted in the following link during each class: <a href="https://github.com/luminwin/BST625/blob/master/Broadcasting.R" class="uri">https://github.com/luminwin/BST625/blob/master/Broadcasting.R</a></p>
-<p>GitHub repository <a href="https://github.com/luminwin/BST625" class="uri">https://github.com/luminwin/BST625</a></p>
-<p>Installation: <a href="http://cran.r-project.org/">R (free)</a> and <a href="http://www.rstudio.com/products/rstudio/download/">RStudio desktop (free)</a></p>
-<p>Useful Links: <a href="https://rdrr.io/snippets/">Run R in your browser</a>; <a href="https://www.rdocumentation.org/">R Documentation</a></p>
-<p>Extra Material: <a href="https://luminwin2.github.io/pdfs/teach/R_Studio_and_Github_Integration.pdf">GitHub for R Studio</a></p>
-<p>Extra readings:</p>
-<ol style="list-style-type: decimal">
-<li><p>John Maindonald and John Braun. (2010). Data Analysis and Graphics Using R - An Example-Based Approach. 3rd edition, Cambridge University Press. <a href="http://www.ievbras.ru/ecostat/Kiril/R/Biblio_N/R_Eng/Maindonald2010.pdf">download</a>. <a href="https://maths-people.anu.edu.au/~johnm/r-book/daagur3.html">recent updates</a> <a href="https://cran.r-project.org/doc/contrib/usingR.pdf">shorter version by John Maindonald</a> (John Maindonald is a contributor to R, type <code><a href="https://rdrr.io/r/base/contributors.html">contributors()</a></code> in R)</p></li>
-<li><p>Nicholas J. Horton and Ken Kleinman. (2015). Using R and RStudio for data management, statistical analysis, and graphics. 2nd edition, CRC Press. <a href="https://englianhu.files.wordpress.com/2016/01/using-r-and-rstudio-for-data-management-statistical-analysis-and-graphics-2nd-edit.pdf">download</a></p></li>
-<li><p>Matt Baggott and Tom Short. (2012). R Reference Card 2.0 <a href="https://cran.r-project.org/doc/contrib/Baggott-refcard-v2.pdf">pdf</a></p></li>
-<li><p>Yanchang Zhao. (2013). R Reference Card for Data Mining <a href="https://cran.r-project.org/doc/contrib/YanchangZhao-refcard-data-mining.pdf">pdf</a></p></li>
-<li><p>Tom Short, translated by 刘思喆. (2014) R参考卡片 <a href="https://cran.r-project.org/doc/contrib/Liu-R-refcard.pdf">pdf</a> Check more free books with other languages at <a href="https://cran.r-project.org/doc/contrib/">CRAN</a> such as <a href="https://cran.r-project.org/doc/contrib/Xu-Statistics_and_R.pdf">Chinese</a> and <a href="https://cran.r-project.org/doc/contrib/Beasley-BioestatisticaUsandoR.pdf">Portuguese</a></p></li>
-</ol>
-</div>
+<style type="text/css">
+h1.title {
+  font-size: 20px;
+}
+h1 { /* Header 1 */
+  font-size: 20px;
+}
+</style>
+<div class="responsive-embed hide-for-small-only">
+<iframe frameborder="0" height="877" src="https://faaibd-xinyi-liao.shinyapps.io/covid/" width="175%">
+</iframe>
 </div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
+      </div>
 
 </div>
 
