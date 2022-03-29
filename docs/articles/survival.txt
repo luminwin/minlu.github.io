@@ -3,5 +3,5 @@
 	and Udaya B. Kogalur",
 	title = {{randomForestSRC}: random survival forests vignette},
 	year = {2021},
-	url = {https://luminwin.github.io/randomForestSRC/articles/survival.html}
+	url = {http://randomforestsrc.org/articles/survival.html}
 }
