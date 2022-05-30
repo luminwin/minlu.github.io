@@ -1,6 +1,0 @@
-@misc{HemantAlgorithm,
-	author = "Hemant Ishwaran and Min Lu and Udaya B. Kogalur",
-	title = {{randomForestSRC}: {randomForestSRC} algorithm vignette},
-	year = {2021},
-	url = {http://randomforestsrc.org/articles/algorithm.html}
-}
